@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Backflow Calculator</string>
+    <string name="on_the_floor">On The Floor: %s</string>
+    <string name="fill_amount">Fill Amount: %s</string>
+    <string name="backflow">Backflow: %s</string>
+    <string name="return_boxes">Total Boxes To Be Returned: %s</string>
+    <string name="reset">Reset</string>
+    <string name="copyright_ikea">© Inter IKEA Systems B.V. 2021</string>
+    <string name="stock">Voorraad</string>
+    <string name="sgf">SGF</string>
+    <string name="assq">ASSQ</string>
+    <string name="flex">Flex</string>
+    <string name="mupq_per_box">MUPQ Per Box</string>
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="CalculatedTextView">
+        <item name="android:layout_marginTop">@dimen/key_line_3</item>
+        <item name="android:layout_marginBottom">@dimen/key_line_3</item>
+        <item name="android:textAppearance">?textAppearanceHeadline6</item>
+    </style>
+
+    <!-- Text input box styles. -->
+    <style name="Widget.MyTheme.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">
+            @style/ThemeOverlay.MyTheme.TextInputEditText.OutlinedBox
+        </item>
+    </style>
+
+    <style name="ThemeOverlay.MyTheme.TextInputEditText.OutlinedBox" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="editTextStyle">@style/Widget.MyTheme.TextInputEditText.OutlinedBox</item>
+        <item name="android:layout_marginTop">@dimen/key_line_2</item>
+        <item name="android:layout_marginBottom">@dimen/key_line_2</item>
+    </style>
+
+    <style name="Widget.MyTheme.TextInputEditText.OutlinedBox" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+</resources>

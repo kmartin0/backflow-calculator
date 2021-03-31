@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.km.backflow.calculator.helpers.Converter" />
+
+        <variable
+            name="calculatorForm"
+            type="com.km.backflow.calculator.form.CalculatorForm" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvOnTheFloor"
+                style="@style/CalculatedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{String.format(@string/on_the_floor, Converter.intToString(calculatorForm.onTheFloor))}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAvailableStock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOnTheFloor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAvailableStock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/stock"
+                    android:inputType="number"
+                    android:text="@={Converter.intToString(calculatorForm.availableStock)}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilSgf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilAvailableStock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSgf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sgf"
+                    android:inputType="number"
+                    android:text="@={Converter.intToString(calculatorForm.sgf)}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvFillAmount"
+                style="@style/CalculatedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{String.format(@string/fill_amount, Converter.intToString(calculatorForm.fillAmount))}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilSgf" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAssq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvFillAmount">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAssq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/assq"
+                    android:inputType="number"
+                    android:text="@={Converter.intToString(calculatorForm.assq)}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFlex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilAssq">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFlex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/flex"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:text="@={Converter.intToString(calculatorForm.flex)}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvBackflow"
+                style="@style/CalculatedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{String.format(@string/backflow, Converter.intToString(calculatorForm.backflow))}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilFlex" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilMupqPerBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBackflow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etMupqPerBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mupq_per_box"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:text="@={Converter.intToString(calculatorForm.mupqPerBox)}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvReturnBoxes"
+                style="@style/CalculatedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{String.format(@string/return_boxes, Converter.intToString(calculatorForm.returnBoxes))}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilMupqPerBox" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>
