@@ -7,6 +7,6 @@
         android:id="@+id/calculatorFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.km.goodsflow.calculator.ui.calculator.CalculatorFragment"/>
+        android:name="com.km.backflow.calculator.ui.calculator.CalculatorFragment"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
