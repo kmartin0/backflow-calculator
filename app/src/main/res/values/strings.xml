@@ -11,4 +11,8 @@
     <string name="assq">ASSQ</string>
     <string name="flex">Flex</string>
     <string name="mupq_per_box">MUPQ Per Box</string>
+
+    <string name="app_update_title">Backflow Calculator update available</string>
+    <string name="app_update_description">Tap to download %s</string>
+    <string name="app_version">v%s</string>
 </resources>
