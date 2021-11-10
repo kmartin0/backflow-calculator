@@ -5,7 +5,7 @@
     <string name="backflow">Backflow: %s</string>
     <string name="return_boxes">Total Boxes To Be Returned: %s</string>
     <string name="reset">Reset</string>
-    <string name="copyright_ikea">© Inter IKEA Systems B.V. 2021</string>
+    <string name="copyright_ikea">© Kevin Martin 2021</string>
     <string name="stock">Voorraad</string>
     <string name="sgf">SGF</string>
     <string name="assq">ASSQ</string>
