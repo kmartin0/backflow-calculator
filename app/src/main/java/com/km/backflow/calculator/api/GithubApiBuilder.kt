@@ -8,15 +8,13 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object GithubApiBuilder {
 
-        private const val BASE_GITHUB_API_URL = "https://api.github.com/"
-
         /**
          * @return [GithubApiService] The service class off the retrofit client.
          */
         fun createApi(): GithubApiService {
             // Create the Retrofit instance
             val githubApi = Retrofit.Builder()
-                .baseUrl(BASE_GITHUB_API_URL)
+                .baseUrl(GithubEndpoints.BASE_GITHUB_API_URL)
                 .client(getOkHttpClientApi())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()

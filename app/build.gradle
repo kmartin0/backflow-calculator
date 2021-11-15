@@ -6,14 +6,14 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId "com.km.backflow.calculator"
         minSdkVersion 23
-        targetSdkVersion 30
-        versionCode 3
-        versionName "3.0"
+        targetSdkVersion 31
+        versionCode 4
+        versionName "4.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -33,7 +33,7 @@ android {
         targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '11'
     }
 }
 
@@ -50,6 +50,7 @@ ext {
     navigationComponentsVersion = '2.3.4'
     retrofitVersion = '2.9.0'
     okHttpVersion = '3.14.9'
+    zxingCore = '3.4.0'
 }
 
 dependencies {
@@ -82,4 +83,7 @@ dependencies {
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
     implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+
+    // ZXing
+    implementation "com.google.zxing:core:$zxingCore"
 }

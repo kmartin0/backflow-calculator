@@ -33,7 +33,6 @@
         android:gravity="start"
         android:paddingHorizontal="@dimen/key_line_2"
         android:paddingBottom="@dimen/key_line_1"
-        android:text="V2.0"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         app:layout_constraintTop_toTopOf="@id/tvCopyRight"
         app:layout_constraintBottom_toBottomOf="@id/tvCopyRight"

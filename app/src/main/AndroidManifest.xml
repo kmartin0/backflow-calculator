@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.km.backflow.calculator">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
@@ -13,7 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Backflow.Calculator">
 
-        <activity android:name="com.km.backflow.calculator.ui.MainActivity">
+        <activity
+            android:name="com.km.backflow.calculator.ui.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,5 +22,7 @@
         </activity>
 
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

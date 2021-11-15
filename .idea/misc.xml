@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeSettings">
-    <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
-    </configurations>
-  </component>
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/kevin/Documents/git-projects/backflow-calculator/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.37552083333333336" />
-        <entry key="..\:/Users/kevin/Documents/git-projects/backflow-calculator/app/src/main/res/layout/activity_main.xml" value="0.359375" />
-        <entry key="..\:/Users/kevin/Documents/git-projects/backflow-calculator/app/src/main/res/layout/fragment_calculator.xml" value="0.15374873353596757" />
-        <entry key="..\:/Users/kevin/Documents/git-projects/backflow-calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.37552083333333336" />
-        <entry key="..\:/Users/kevin/Documents/git-projects/backflow-calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.37552083333333336" />
+        <entry key="..\:/Users/kevin/Documents/git-projects/backflow-calculator/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.3359375" />
+        <entry key="..\:/Users/kevin/Documents/git-projects/backflow-calculator/app/src/main/res/layout/activity_main.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/kevin/Documents/git-projects/backflow-calculator/app/src/main/res/layout/form_calculator.xml" value="0.31979166666666664" />
+        <entry key="..\:/Users/kevin/Documents/git-projects/backflow-calculator/app/src/main/res/layout/fragment_share_dialog.xml" value="0.30978260869565216" />
+        <entry key="..\:/Users/kevin/Documents/git-projects/backflow-calculator/app/src/main/res/menu/menu_main.xml" value="0.31979166666666664" />
+        <entry key="..\:/Users/kevin/Documents/git-projects/backflow-calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3359375" />
+        <entry key="..\:/Users/kevin/Documents/git-projects/backflow-calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3359375" />
       </map>
     </option>
   </component>

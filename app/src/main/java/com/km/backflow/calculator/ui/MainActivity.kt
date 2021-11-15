@@ -13,27 +13,32 @@ import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+	private lateinit var binding: ActivityMainBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
 
-        initViewBinding()
-        checkForAppUpdate()
-    }
+		initViewBinding()
 
-    private fun initViewBinding() {
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+	}
 
-        binding.tvVersion.text = getString(R.string.app_version, BuildConfig.VERSION_NAME)
-    }
+	private fun initViewBinding() {
+		binding = ActivityMainBinding.inflate(layoutInflater)
+		setContentView(binding.root)
 
-    private fun checkForAppUpdate() {
-        CoroutineScope(Dispatchers.IO).launch {
-            NewVersionHelper().checkForNewAppVersion(applicationContext)
-        }
-    }
+		binding.tvVersion.text = getString(R.string.app_version, BuildConfig.VERSION_NAME)
+	}
 
+	private fun checkForAppUpdate() {
+		CoroutineScope(Dispatchers.IO).launch {
+			NewVersionHelper().checkForNewAppVersion(applicationContext)
+		}
+	}
+
+	override fun onResume() {
+		super.onResume()
+
+		checkForAppUpdate()
+	}
 
 }

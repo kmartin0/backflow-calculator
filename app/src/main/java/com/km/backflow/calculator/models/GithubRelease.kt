@@ -2,6 +2,7 @@ package com.km.backflow.calculator.models
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import com.km.backflow.calculator.helpers.Constants
 import kotlinx.parcelize.Parcelize
 
 
@@ -24,4 +25,10 @@ data class GithubRelease(
 
     @SerializedName("assets")
     val assets: List<GithubAsset>,
-) : Parcelable
+) : Parcelable {
+    fun getApkAsset(): GithubAsset? {
+        return assets.find { asset ->
+            asset.contentType == Constants.CONTENT_TYPE_APK
+        }
+    }
+}

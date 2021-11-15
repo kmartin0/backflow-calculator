@@ -5,7 +5,7 @@ import retrofit2.http.GET
 
 interface GithubApiService {
 
-    @GET("repos/kmartin0/backflow-calculator/releases/latest")
+    @GET(GithubEndpoints.GET_BACKFLOW_CALCULATOR_LATEST_RELEASE)
     suspend fun getLatestGithubRelease(): GithubRelease
 
 }
