@@ -19,4 +19,3 @@ Backflow calculator to simplify the process of calculating the total boxes to be
 ## Screenshots
 
 ![Home screenshot](https://github.com/kmartin0/assets/blob/master/backflow-calculator/backflow_calculator_main.png?raw=true)
-![Share screenshot](https://github.com/kmartin0/assets/blob/master/backflow-calculator/backflow_calculator_share.png?raw=true)
