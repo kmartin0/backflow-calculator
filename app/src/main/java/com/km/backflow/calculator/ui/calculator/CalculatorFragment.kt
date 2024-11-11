@@ -19,7 +19,7 @@ class CalculatorFragment : BaseMVVMFragment<FragmentCalculatorBinding, Calculato
 	private fun initViews() {
 		binding.toolbar.title = getString(R.string.app_name)
 
-		binding.calculatorFormLayout.etFlex.setOnEditorActionListener { v, actionId, event ->
+		binding.calculatorFormLayout.etFlex.setOnEditorActionListener { _, actionId, _ ->
 			if (actionId == EditorInfo.IME_ACTION_DONE) {
 				binding.calculatorFormLayout.etFlex.clearFocus()
 				hideKeyboard()
